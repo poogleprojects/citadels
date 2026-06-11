@@ -45,38 +45,37 @@ Target icons:
 Example IDs include `temple`, `market`, `castle`, `palace`, `laboratory`, `graveyard`.
 If no file exists, the game renders a placeholder automatically.
 
-Install file structure ::
-
-./root
-   user 1415 Jun 11 14:41 README.md
-   user 4096 Jun 11 13:35 assets
-   user 3604 Jun 11 14:41 index.html
-   user 4096 Jun 11 13:40 src
-   user 9913 Jun 11 14:41 styles.css
+## Install file structure
+-./root
+-   user 1415 Jun 11 14:41 README.md
+-   user 4096 Jun 11 13:35 assets
+-   user 3604 Jun 11 14:41 index.html
+-   user 4096 Jun 11 13:40 src
+-   user 9913 Jun 11 14:41 styles.css
  
-./assets:
-  user 4096 Jun 11 15:22 cards
-  user 4096 Jun 11 14:16 icons
-  user 4096 Jun 11 14:18 roles
+-./assets:
+-  user 4096 Jun 11 15:22 cards
+-  user 4096 Jun 11 14:16 icons
+-  user 4096 Jun 11 14:18 roles
   
-./assets/cards:
-   user 3162607 Jun 11 15:19 Districts_1.png
-   user 3523053 Jun 11 15:22 Districts_2.png
+-./assets/cards:
+-   user 3162607 Jun 11 15:19 Districts_1.png
+-   user 3523053 Jun 11 15:22 Districts_2.png
   
-./assets/icons:
-   user 26760 Jun 11 14:15 dagger.png
-   user  3509 Jun 11 14:14 moneybag.png
+-./assets/icons:
+-   user 26760 Jun 11 14:15 dagger.png
+-   user  3509 Jun 11 14:14 moneybag.png
  
-./assets/roles:
-   user 2154757 Jun 11 14:15 roles.png
+-./assets/roles:
+-   user 2154757 Jun 11 14:15 roles.png
  
-./src:
-   user  6620 Jun 11 15:44 ai.js
-   user  6406 Jun 11 15:44 assetLoader.js
-   user  1679 Jun 11 13:36 data.js
-   user 17008 Jun 11 14:56 engine.js
-   user 27184 Jun 11 15:44 main.js
-   user   715 Jun 11 13:43 utils.js
-   user  3536 Jun 11 13:43 webglBg.js
+-./src:
+-   user  6620 Jun 11 15:44 ai.js
+-   user  6406 Jun 11 15:44 assetLoader.js
+-   user  1679 Jun 11 13:36 data.js
+-   user 17008 Jun 11 14:56 engine.js
+-   user 27184 Jun 11 15:44 main.js
+-   user   715 Jun 11 13:43 utils.js
+-   user  3536 Jun 11 13:43 webglBg.js
 
 
