@@ -78,4 +78,16 @@ If no file exists, the game renders a placeholder automatically.
 -   user   715 Jun 11 13:43 utils.js
 -   user  3536 Jun 11 13:43 webglBg.js
 
+## Bring your own Assets
+- no images of the roles, districts, icon are provided
+- best to generate your own images to customize for yourself
+- Use this prompt for roles : "Generate for me a 4 x 2 grid image of the roles in the card game Citadels. For each roles, include it's description. Don't have any border around or between the images. The grid should display the roles in this order : assassin,thief,magician,king,bishop,merchant,architect,warlord "
+- Use this prompt for districts (1) : Generate for me an image of 4 x 3 grid for these Citadel districts, no border around / between the districts. For each district, display its name, cost, and color correctly. Create the images in the style of <your preference> art. Display the districts in this order: manor, castle, palace, temple, church, monastery, cathedral, tavern, market, tradingPost, docks, harbor
+- Use this prompt for districts (2) : Generate for me an image of 4 x 3 grid for these Citadel districts, no border around / between the districts. For each district, display its name, cost, and color correctly. Create the images in the style of <your preference> art. Display the districts in this order: townHall, watchtower, prison, battlefield, fortress, hauntedCity, keep, imperialTreasury, mapRoom, laboratory, observatory, smithy 
+
+
+
+
+
+
 
