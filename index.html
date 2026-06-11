@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citadels WebGL MVP</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <canvas id="table-bg" aria-hidden="true"></canvas>
+  <div id="fx-layer" class="fx-layer" aria-live="polite" aria-atomic="true"></div>
+  <div id="role-preview" class="role-preview hidden" aria-hidden="true">
+    <div id="role-preview-name" class="role-preview-name"></div>
+    <div id="role-preview-image" class="role-preview-image"></div>
+  </div>
+  <main class="app-shell">
+    <header class="top-bar">
+      <div>
+        <h1>Citadels</h1>
+        <p class="subtitle">Base game MVP · Local couch co-op + CPU</p>
+      </div>
+      <div class="status-pills">
+        <span id="round-pill" class="pill">Round 1</span>
+        <span id="phase-pill" class="pill">Setup</span>
+      </div>
+    </header>
+ 
+    <section class="card setup-row">
+      <div class="setup-block">
+        <label for="human-count">Humans</label>
+        <select id="human-count">
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="setup-block">
+        <label for="cpu-count">CPU</label>
+        <select id="cpu-count">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="setup-block setup-wide">
+        <label for="starting-gold">Starting Gold</label>
+        <input id="starting-gold" type="number" min="0" max="20" step="1" value="2" />
+      </div>
+      <div class="setup-block setup-wide">
+        <label for="speed-range">CPU Speed</label>
+        <input id="speed-range" type="range" min="150" max="1200" step="50" value="500" />
+      </div>
+      <div class="setup-block setup-wide">
+        <label for="cpu-names">CPU Names (comma separated)</label>
+        <input id="cpu-names" type="text" value="Sir Lagalot, Count Null, Baron Buffer, Queen Segfault" />
+      </div>
+      <button id="new-game-btn" class="cta">Start New Game</button>
+      <button id="export-btn" class="cta">Export Save</button>
+      <button id="import-btn" class="cta">Import Save</button>
+      <input id="import-file" type="file" accept="application/json" class="hidden-file" />
+    </section>
+ 
+    <section id="turn-banner" class="turn-banner hidden"></section>
+ 
+    <section class="board-grid">
+      <section class="players-panel">
+        <h2>Players</h2>
+        <div id="players-list" class="players-list"></div>
+      </section>
+ 
+      <section class="center-panel">
+        <div class="row">
+          <div class="card">
+            <h3>Role Draft</h3>
+            <div id="draft-area" class="draft-area"></div>
+          </div>
+          <div class="card">
+            <h3>Action</h3>
+            <div id="action-area" class="action-area"></div>
+          </div>
+        </div>
+ 
+        <div class="card hand-card">
+          <h3>Active Hand</h3>
+          <div id="hand-area" class="hand-area"></div>
+        </div>
+      </section>
+ 
+      <section class="log-panel card">
+        <h2>Event Log</h2>
+        <div id="log-area" class="log-area"></div>
+      </section>
+    </section>
+  </main>
+ 
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
