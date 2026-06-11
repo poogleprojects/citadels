@@ -59,15 +59,15 @@ If no file exists, the game renders a placeholder automatically.
 -  user 4096 Jun 11 14:18 roles
   
 -./assets/cards:
--   user 3162607 Jun 11 15:19 Districts_1.png
--   user 3523053 Jun 11 15:22 Districts_2.png
+-   user 3162607 Jun 11 15:19 Districts_1.png   <--- image of 4 x 3 grid of districts
+-   user 3523053 Jun 11 15:22 Districts_2.png   <--- image of 4 x 3 grid of districts
   
 -./assets/icons:
 -   user 26760 Jun 11 14:15 dagger.png
 -   user  3509 Jun 11 14:14 moneybag.png
  
 -./assets/roles:
--   user 2154757 Jun 11 14:15 roles.png
+-   user 2154757 Jun 11 14:15 roles.png        <--- image of 4 x 2 grid of roles
  
 -./src:
 -   user  6620 Jun 11 15:44 ai.js
